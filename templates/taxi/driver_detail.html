@@ -2,9 +2,9 @@
 
 {% block content %}
   <h1>Driver username: {{ driver.username }}</h1>
-  {% if driver.cars.all %}
+  {% if driver.cars %}
     <h2>Driver cars</h2>
-    {% for car in driver.cars.count %}
+    {% for car in driver.cars.all %}
       <h3>{{ car.model }}</h3>
     {% endfor %}
     {% else %}
