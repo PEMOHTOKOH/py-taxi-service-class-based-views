@@ -42,4 +42,3 @@ class DriverListView(generic.ListView):
 
 class DriverDetailView(generic.DetailView):
     model = Driver
-    # queryset = Driver.objects.select_related("manufacturer")#!

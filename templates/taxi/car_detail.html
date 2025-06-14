@@ -3,7 +3,7 @@
 {% block content %}
   <h1>Car model: {{ car.model }}</h1>
   <h2>Manufacturer: {{ car.manufacturer.name }} | Country: {{ car.manufacturer.country }}</h2>
-  {% if car.drivers.all %}
+  {% if car.drivers.exists %}
     <h3>Car drivers</h3>
     {% for driver in car.drivers.all %}
       <h3>{{ driver.username }}</h3>

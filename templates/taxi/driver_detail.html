@@ -4,7 +4,7 @@
   <h1>Driver username: {{ driver.username }}</h1>
   {% if driver.cars.all %}
     <h2>Driver cars</h2>
-    {% for car in driver.cars.all %}
+    {% for car in driver.cars.count %}
       <h3>{{ car.model }}</h3>
     {% endfor %}
     {% else %}
